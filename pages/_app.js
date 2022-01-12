@@ -1,11 +1,14 @@
+import { Fragment } from "react";
 import Layout from "../components/Layout";
+import { GlobalStyle } from "../styles/GlobalStyle";
 
-function Project({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Fragment>
+      <GlobalStyle />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Fragment>
   );
 }
-
-export default Project;
