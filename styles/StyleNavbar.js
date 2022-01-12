@@ -62,9 +62,10 @@ export const StyleNavbar = styled.header`
   .listItem {
     margin: 20px;
     font-weight: 500;
+    cursor: pointer;
     a {
-      text-decoration: none;
       color: white;
+      text-decoration: none;
     }
   }
 

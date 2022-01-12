@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment } from "react";
 import Featured from "../components/Featured";
 
 export default function Home() {
