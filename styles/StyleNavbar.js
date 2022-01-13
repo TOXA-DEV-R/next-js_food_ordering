@@ -89,6 +89,9 @@ export const StyleNavbar = styled.header`
     color: #d1411e;
   }
 
+  a {
+    font-weight: bold;
+  }
   @media screen and (max-width: 480px) {
     .item:nth-child(2) {
       display: none;
