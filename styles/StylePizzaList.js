@@ -1,3 +1,33 @@
 import styled from "styled-components";
 
-const StylePizzaList = styled.div``;
+const StylePizzaList = styled.div`
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .desc {
+    font-size: 24px;
+    color: #444;
+    width: 70%;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 480px) {
+    .title {
+      text-align: center;
+    }
+
+    .desc {
+      width: 90%;
+      text-align: center;
+    }
+  }
+`;
