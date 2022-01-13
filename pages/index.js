@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import Featured from "../components/Featured";
+import PizzaList from "../components/PizzaList";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <title>Food Ordering</title>
       </Head>
       <Featured />
+      <PizzaList />
     </Fragment>
   );
 }

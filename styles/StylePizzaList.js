@@ -31,3 +31,4 @@ const StylePizzaList = styled.div`
     }
   }
 `;
+export default StylePizzaList;
