@@ -6,15 +6,6 @@ const StyleFeatured = styled.div`
   overflow: hidden;
   position: relative;
 
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-
   .swiper {
     width: 100%;
     height: 100%;
@@ -48,22 +39,21 @@ const StyleFeatured = styled.div`
   }
 
   .wrapper {
-    width: 300vw;
+    width: 100%;
     height: 100%;
     display: flex;
     transition: all 1.5s ease-in-out;
+    position: relative;
   }
 
   .imgContainer {
-    width: 100vw;
+    width: 100vw !important;
     height: 100%;
     position: relative;
   }
 
   @media screen and (max-width: 480px) {
-    .container {
-      height: 50vh;
-    }
+    height: 50vh;
   }
 `;
 export default StyleFeatured;

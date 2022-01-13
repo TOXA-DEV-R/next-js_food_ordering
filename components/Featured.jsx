@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import StyleFeatured from "../styles/StyleFeatured";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 // import Swiper core and required modules
 import SwiperCore, { Navigation } from "swiper";
 
-// install Swiper modules
 SwiperCore.use([Navigation]);
 
 const Featured = () => {
