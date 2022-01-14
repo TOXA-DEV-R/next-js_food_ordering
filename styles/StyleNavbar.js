@@ -25,30 +25,33 @@ export const StyleNavbar = styled.header`
     justify-content: flex-end;
   }
 
-  .callButton {
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  .order {
+    &__call-button {
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__call-numbers {
+      margin-left: 20px;
+      color: white;
+    }
+    .number {
+      display: block;
+      &:first-child {
+        font-size: 12px;
+        font-weight: 500;
+      }
 
-  .texts {
-    margin-left: 20px;
-    color: white;
-  }
-
-  .text:first-child {
-    font-size: 12px;
-    font-weight: 500;
-  }
-
-  .text:last-child {
-    font-size: 20px;
-    font-weight: bold;
+      &:last-child {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
   }
 
   .list {
@@ -57,20 +60,24 @@ export const StyleNavbar = styled.header`
     align-items: center;
     list-style: none;
     color: white;
-  }
-
-  .listItem {
-    margin: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    a {
-      color: white;
-      text-decoration: none;
+    &_item {
+      margin: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 
   .cart {
     position: relative;
+    &_btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
   }
 
   .counter {

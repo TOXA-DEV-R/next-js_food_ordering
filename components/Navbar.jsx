@@ -15,8 +15,8 @@ const Navbar = () => {
   ];
   return (
     <StyleNavbar>
-      <div className="item">
-        <div className="callButton">
+      <a className="item order" href="tel:+77781001543">
+        <div className="order__call-button">
           <Image
             src="/img/telephone.png"
             alt={"image"}
@@ -24,16 +24,16 @@ const Navbar = () => {
             height="32px"
           />
         </div>
-        <div className="texts">
-          <div className="text">ORDER NOW!</div>
-          <div className="text">+77781001543</div>
+        <div className="order__call-numbers">
+          <span className="number">ORDER NOW!</span>
+          <span className="number">+77781001543</span>
         </div>
-      </div>
-      <div className="item">
+      </a>
+      <nav className="item">
         <ul className="list">
           {menuData.map((item, i) => (
             <Fragment key={i}>
-              <li className="listItem">
+              <li className="list_item">
                 <Link href={item.path}>{item.label}</Link>
               </li>
               {item.img && (
@@ -47,10 +47,12 @@ const Navbar = () => {
             </Fragment>
           ))}
         </ul>
-      </div>
+      </nav>
       <div className="item">
         <div className="cart">
-          <Image src="/img/cart.png" alt="cart" width="30px" height="30px" />
+          <button type="button" className="cart_btn">
+            <Image src="/img/cart.png" alt="cart" width="30px" height="30px" />
+          </button>
           <div className="counter">2</div>
         </div>
       </div>

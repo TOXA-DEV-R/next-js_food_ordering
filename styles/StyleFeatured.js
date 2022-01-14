@@ -27,7 +27,7 @@ const StyleFeatured = styled.div`
     object-fit: cover;
   }
 
-  .arrowContainer {
+  .arrow-container {
     position: absolute;
     width: 10%;
     height: 20%;
@@ -46,7 +46,7 @@ const StyleFeatured = styled.div`
     position: relative;
   }
 
-  .imgContainer {
+  .img-container {
     width: 100vw !important;
     height: 100%;
     position: relative;

@@ -20,7 +20,7 @@ const Featured = () => {
   return (
     <StyleFeatured>
       <div className="wrapper">
-        <div className="arrowContainer custom_prev" style={{ left: 0 }}>
+        <div className="arrow-container custom-prev" style={{ left: 0 }}>
           <Image
             src="/img/arrowl.png"
             alt="arrowl.png"
@@ -29,11 +29,12 @@ const Featured = () => {
           />
         </div>
         <Swiper
-          navigation={{ nextEl: ".custom_next", prevEl: ".custom_prev" }}
+          navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
+          loop={true}
           className="swiper"
         >
           {images.map((item, i) => (
-            <SwiperSlide className="imgContainer" key={i}>
+            <SwiperSlide className="img-container" key={i}>
               <Image
                 src={`/img/${item.src}.png`}
                 alt={`${item.src}`}
@@ -43,7 +44,7 @@ const Featured = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="arrowContainer custom_next" style={{ right: 0 }}>
+        <div className="arrow-container custom-next" style={{ right: 0 }}>
           <Image
             src="/img/arrowr.png"
             layout="fill"
